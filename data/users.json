@@ -1,0 +1,6 @@
+{
+  "standard": { "username": "standard_user", "password": "secret_sauce" },
+  "locked": { "username": "locked_out_user", "password": "secret_sauce" },
+  "incorrectPassword": { "username": "standard_user", "password": "wrong_password"},
+  "checkOut": {"firstName": "Mauricio", "lastName": "Sabaj", "postalCode": "11300"}
+}

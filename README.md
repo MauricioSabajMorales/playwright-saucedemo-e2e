@@ -49,6 +49,14 @@ Esto simula un entorno real de integración continua (CI).
 
 ---
 
+## 📊 HTML Report (Sample Execution)
+
+Ejemplo de ejecución completa en 3 navegadores (Chromium, Firefox y WebKit):
+
+![Playwright HTML Report](./assets/playwright-html-report.png)
+
+---
+
 ## 🧱 Estructura del repo
 
 ```text

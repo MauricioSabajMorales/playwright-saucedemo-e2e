@@ -1,10 +1,26 @@
 # Playwright + TypeScript | SauceDemo E2E Portfolio
 
-![Playwright Tests](https://github.com/MauricioSabajMorales/playwright-saucedemo-e2e/actions/workflows/playwright.yml/badge.svg)
+[![Playwright Tests](https://github.com/MauricioSabajMorales/playwright-saucedemo-e2e/actions/workflows/playwright.yml/badge.svg)](https://github.com/MauricioSabajMorales/playwright-saucedemo-e2e/actions)
 
 
 Proyecto de automatización **End-to-End (E2E)** con **Playwright + TypeScript** sobre la app de práctica **SauceDemo**.  
 Incluye escenarios de **login, carrito y checkout** aplicando **Page Object Model (POM)** y reutilización mediante **custom fixtures** y **helpers**.
+
+---
+
+## 👨‍💻 About Me
+
+QA Engineer with 3+ years of experience in software testing, including strong expertise in accessibility testing, especially on mobile platforms.
+
+My background includes functional, exploratory, and accessibility validation, ensuring inclusive user experiences across devices.
+
+Currently expanding into Automation Engineering with focus on:
+- Playwright + TypeScript test automation
+- CI/CD integration with GitHub Actions
+- API testing
+- AI Model Testing (in training)
+
+My goal is to grow into a QA Automation / SDET role while combining automation, accessibility expertise, and modern testing practices.
 
 ---
 

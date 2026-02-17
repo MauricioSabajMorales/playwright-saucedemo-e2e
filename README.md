@@ -18,19 +18,12 @@ Incluye pruebas de login, carrito y checkout con **Page Object Model (POM)**, **
   - Step Two: review y finalizar compra (@regression)
 
 ## 🧱 Estructura del repo
-/tests # specs
-/pages # Page Objects (POM)
-/fixtures # custom fixtures (test extension)
-/utils # helpers (navegación/preparación)
-/data # test data (users.json)
+
+```text
+/tests        # specs
+/pages        # Page Objects (POM)
+/fixtures     # custom fixtures (test extension)
+/utils        # helpers (navegación/preparación)
+/data         # test data (users.json)
 playwright.config.ts
-
-## ⚙️ Requisitos
-- Node.js (LTS recomendado)
-- npm
-
-## ▶️ Cómo correr
-
-Instalar dependencias:
-```bash
-npm install
+```

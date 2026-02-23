@@ -65,14 +65,6 @@ async addToCart(){
     await this.addBackPackToCart.click();
 }
 
-//async assertCartLink(){
-//    await expect(this.shoppingCart).toBeVisible();
-//}
-
-//async goToCartPage(){
-//    await this.shoppingCart.click();
-//}
-
 async removeFromCart(){
     await this.removeBackpackFromCart.click();
 }

@@ -52,6 +52,19 @@ My goal is to grow into a QA Automation / SDET role while combining automation, 
 
 ---
 
+## 🚀 Cómo correr el proyecto (Quick Start)
+
+### Prerrequisitos
+- Node.js 18+ (recomendado 20)
+- npm
+
+### Instalación
+```bash
+npm ci
+npx playwright install
+
+---
+
 ## 🤖 Continuous Integration
 
 Este proyecto incluye **GitHub Actions** para ejecutar automáticamente los tests en cada push a `main`.

@@ -25,18 +25,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # ✅ Cache browsers (clave para velocidad)
-      - name: Cache Playwright browsers
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-ms-playwright-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-ms-playwright-
-
-      # ✅ Sin --with-deps para evitar apt-get lento
       - name: Install Playwright browsers
-        run: npx playwright install
+        run: npx playwright install --with-deps
 
       - name: Run Playwright tests
         run: npx playwright test
@@ -45,6 +35,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report-${{ github.run_number }}
+          name: playwright-report
           path: playwright-report
           retention-days: 7

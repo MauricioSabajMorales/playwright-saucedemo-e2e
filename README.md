@@ -3,8 +3,8 @@
 [![Playwright Tests](https://github.com/MauricioSabajMorales/playwright-saucedemo-e2e/actions/workflows/playwright.yml/badge.svg)](https://github.com/MauricioSabajMorales/playwright-saucedemo-e2e/actions)
 
 
-Proyecto de automatización **End-to-End (E2E)** con **Playwright + TypeScript** sobre la app de práctica **SauceDemo**.  
-Incluye escenarios de **login, carrito y checkout** aplicando **Page Object Model (POM)** y reutilización mediante **custom fixtures** y **helpers**.
+End-to-End (E2E) automation project using **Playwright + TypeScript** on the practice app **SauceDemo**.  
+It includes **login, cart, and checkout scenarios**, applying the **Page Object Model (POM)** and reuse through **custom fixtures** and **helpers**.
 
 ---
 
@@ -15,84 +15,86 @@ QA Engineer with 3+ years of experience in software testing, including strong ex
 My background includes functional, exploratory, and accessibility validation, ensuring inclusive user experiences across devices.
 
 Currently expanding into Automation Engineering with focus on:
-- Playwright + TypeScript test automation
-- CI/CD integration with GitHub Actions
-- API testing
-- AI Model Testing (in training)
+
+- Playwright + TypeScript test automation  
+- CI/CD integration with GitHub Actions  
+- API testing  
+- AI Model Testing (in training)  
 
 My goal is to grow into a QA Automation / SDET role while combining automation, accessibility expertise, and modern testing practices.
 
 ---
 
-## ✅ Qué valida este proyecto
+## ✅ What This Project Validates
 
 ### Login
-- Login exitoso **(@smoke)**
-- Usuario bloqueado muestra error **(@regression)**
-- Password incorrecta muestra error **(@regression)**
+- Successful login **(@smoke)**
+- Locked-out user displays error message **(@regression)**
+- Incorrect password displays error message **(@regression)**
 
 ### Cart
 - Add item **(@regression)**
-- View cart + validación de ítem **(@regression)**
+- View cart + item validation **(@regression)**
 - Remove item **(@regression)**
 
 ### Checkout
-- Step One: completar datos **(@regression)**
-- Step One: validación negativa (form vacío) **(@regression)**
-- Step Two: review y finalizar compra **(@regression)**
+- Step One: complete user information **(@regression)**
+- Step One: negative validation (empty form) **(@regression)**
+- Step Two: review and complete purchase **(@regression)**
 
 ---
 
 ## 🧰 Tech Stack
 - **Playwright**
 - **TypeScript**
-- Patrón **POM (Page Object Model)**
-- **Custom fixtures** (`base.extend`) para contexto reutilizable
-- **Helpers** para navegación/preparación de escenarios
+- **POM (Page Object Model) pattern**
+- **Custom fixtures** (`base.extend`) for reusable context
+- **Helpers** for navigation and scenario setup
 
 ---
 
-## 🚀 Cómo correr el proyecto (Quick Start)
+## 🚀 How to Run the Project (Quick Start)
 
-### Prerrequisitos
-- Node.js 18+ (recomendado 20)
+### Prerequisites
+- Node.js 18+ (20 recommended)
 - npm
 
-### Instalación
+### Installation
 ```bash
 npm ci
 npx playwright install
+```
 
 ---
 
 ## 🤖 Continuous Integration
 
-Este proyecto incluye **GitHub Actions** para ejecutar automáticamente los tests en cada push a `main`.
+This project includes **GitHub Actions** to automatically run the tests on every push to `main`.
 
-- Ejecuta tests en entorno Linux
-- Instala Playwright y browsers
-- Corre suite completa
-- Falla el pipeline si algún test falla
+- Runs tests in a Linux environment  
+- Installs Playwright and browsers  
+- Executes the full test suite  
+- Fails the pipeline if any test fails  
 
-Esto simula un entorno real de integración continua (CI).
+This simulates a real-world Continuous Integration (CI) environment.
 
 ---
 
 ## 📊 HTML Report (Sample Execution)
 
-Ejemplo de ejecución completa en 3 navegadores (Chromium, Firefox y WebKit):
+Example of a full execution across 3 browsers (Chromium, Firefox, and WebKit):
 
 ![Playwright HTML Report](./assets/playwright-html-report.png)
 
 ---
 
-## 🧱 Estructura del repo
+## 🧱 Repository Structure
 
 ```text
 /tests        # specs
 /pages        # Page Objects (POM)
 /fixtures     # custom fixtures (test extension)
-/utils        # helpers (navegación/preparación)
+/utils        # helpers (navigation/setup)
 /data         # test data (users.json)
 playwright.config.ts
 ```

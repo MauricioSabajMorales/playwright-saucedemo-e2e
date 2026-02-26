@@ -3,7 +3,7 @@
 [![Playwright Tests](https://github.com/MauricioSabajMorales/playwright-saucedemo-e2e/actions/workflows/playwright.yml/badge.svg)](https://github.com/MauricioSabajMorales/playwright-saucedemo-e2e/actions)
 
 
-End-to-End (E2E) automation project using **Playwright + TypeScript** on the practice app **SauceDemo**.  
+End-to-End (E2E) automation project using **Playwright + TypeScript** on the practice app **SauceDemo** (https://www.saucedemo.com/).  
 It includes **login, cart, and checkout scenarios**, applying the **Page Object Model (POM)** and reuse through **custom fixtures** and **helpers**.
 
 ---
@@ -47,7 +47,7 @@ My goal is to grow into a QA Automation / SDET role while combining automation, 
 ## 🧰 Tech Stack
 - **Playwright**
 - **TypeScript**
-- **POM (Page Object Model) pattern**
+- **POM (Page Object Model):** Each page is abstracted into dedicated classes inside `/pages` (e.g., `LoginPage`, `InventoryPage`, `CartPage`, `CheckoutPage`) to improve maintainability and readability.
 - **Custom fixtures** (`base.extend`) for reusable context
 - **Helpers** for navigation and scenario setup
 
@@ -81,6 +81,9 @@ This simulates a real-world Continuous Integration (CI) environment.
 ---
 
 ## 📊 HTML Report (Sample Execution)
+
+The HTML report shown below is generated automatically by Playwright after test execution.  
+It is **not part of the Page Object Model architecture**, but a built-in reporting feature used to visualize execution results.
 
 Example of a full execution across 3 browsers (Chromium, Firefox, and WebKit):
 
